@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-range-input-directive-production</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    <link rel="stylesheet" href="style1.css" />
+
+
+
+</head>
+<body ng-app="range">
+    <script src="Script1.js"></script>
+
+    <form ng-controller="myctrl" class="slidercontainer">
+        
+        <h1 allign="center"><u>Enter your Details</u> </h1><br />
+        Enter your name&nbsp;&nbsp; &nbsp;&nbsp;:<input type="text" ng-model="name" placeholder="Enter name" /><br /><br />
+
+
+        Enter your age &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;:<input type="number" ng-model="age" placeholder="18" min="18" max="50" /> <br />
+        <br />
+        Institution name &nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" ng-model="school" placeholder="Institution name" /><br /><br />
+        Year of Graduation &nbsp;:<input type="range" name="range" ng-model="year" min="1999" max="{{max}}" class="slider"><br><br />
+        Enter your state &nbsp;&nbsp; &nbsp;&nbsp; :<select name="state" ng-model="state" class="ss">
+            <option value="Tamil Nadu">TamilNadu</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Andhra Pradhesh">Andhra Pradhesh</option>
+        </select>
+
+ 
+
+
+
+
+
+
+        <br><br><hr><h1 allign="center"><u>DETAILS</u></h1>
+        <p> My name is {{name}} and my age is  {{age}}.I've Graduated from {{school}},in the year of {{year}}.And i'm from {{state}}.</p>
+    </form>
+    
+</body>
+</html>
